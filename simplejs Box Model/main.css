@@ -49,6 +49,9 @@ body{
     text-decoration: underline;
     text-transform: uppercase;
 }
-.clickbtn{
+.clickbtn{ 
     text-align: center;
+}
+.modal-footer{
+    background-color: yellowgreen;
 }
