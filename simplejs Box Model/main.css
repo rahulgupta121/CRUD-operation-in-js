@@ -54,4 +54,5 @@ body{
 }
 .modal-footer{
     background-color: yellowgreen;
+    display: flow-root;
 }

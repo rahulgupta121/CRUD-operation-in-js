@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="heading">CRUD Operations</h1>
+    <!-- <div id="error"></div> -->
+    <form id="form" class="mainContent" action='/' method='GET'>
+        <input id="Name" class="entername" type="text" placeholder="Enter Name" name="name" >
+  
+        <input id="Email" class="enteremail" type="email" placeholder="Enter Email" name="email"></input>
+        
+        <input id="Password" class="enterpassword" type="password" placeholder="Enter Password" name='password'>
+        <button class="submitbtn" type="submit">Submit</button>
+    </form>
+
+    <div class="searchBox">
+      <input id="searchId" placeholder="Search List" class="search">
+      <button class='searchingBox' type="submit" onclick="seaching()">Search </button>
+      <div id="showdiv">
+        <table>
+          
+          <tr>
+            <td id="name">Name</td>
+            <td id="email">Email</td>
+            <td id="password">Password</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
