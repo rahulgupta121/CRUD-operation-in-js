@@ -13,9 +13,9 @@
     <h1 class="heading">CRUD Operations</h1>
     <!-- <div id="error"></div> -->
     <form id="form" class="mainContent" action='/' method='GET'>
-        <input id="Name" class="entername" type="text" placeholder="Enter Name" name="name" >
+        <input id="Name" class="entername" type="text" placeholder="Enter Name" name="name" value="" >
   
-        <input id="Email" class="enteremail" type="email" placeholder="Enter Email" name="email"></input>
+        <input id="Email" class="enteremail" type="email" placeholder="Enter Email" name="email" >
         
         <input id="Password" class="enterpassword" type="password" placeholder="Enter Password" name='password'>
         <button class="submitbtn" type="submit">Submit</button>
@@ -23,14 +23,19 @@
 
     <div class="searchBox">
       <input id="searchId" placeholder="Search List" class="search">
-      <button class='searchingBox' type="submit" onclick="seaching()">Search </button>
+      <button class='searchingBox' type="submit" onclick="seaching()">Show Data </button>
       <div id="showdiv">
         <table>
-          
-          <tr>
-            <td id="name">Name</td>
-            <td id="email">Email</td>
-            <td id="password">Password</td>
+
+          <tr class="contentrow">
+            <td class="tableheading">Name</td>
+            <td class="tableheading">Email</td>
+            <td class="tableheading">Password</td>
+          </tr>
+          <tr class="datarow">
+            <td id="name"></td>
+            <td id="email"></td>
+            <td id="password"></td>
           </tr>
         </table>
       </div>

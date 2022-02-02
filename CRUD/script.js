@@ -1,9 +1,11 @@
     const name = document.getElementById('Name')
     const email = document.getElementById('Email')
+    //console.log(email.value);
     const password = document.getElementById('Password')
     const form = document.getElementById('form')
     //const errormessage = document.getElementById('error')
-    var pattern = new RegExp("^(()?\\d{3}())?(-|\\s)?\\d{3}(-|\\s)?\\d{4}$");
+    var nameTest = name.search(/[a-zA-Z]/g);
+    var pattern = new RegExp ("^(()?\\d{3}())?(-|\\s)?\\d{3}(-|\\s)?\\d{4}$");
     form.addEventListener('submit', (e) =>{
         e.preventDefault()
          
@@ -38,26 +40,23 @@
          
     }
     })
-  
-    
-
 
     //const searchList = document.getElementById('searchId')
     const seaching=()=>{
-        var nameID = localStorage.getItem("Name",name);
+        var nameID = localStorage.getItem("Name");
         console.log(nameID);
-        var emailID = localStorage.setItem("Email",email);
+        var emailID = localStorage.getItem("Email");
         console.log(emailID);
-        var passwordID = localStorage.setItem("Password",password);
+        var passwordID = localStorage.getItem("Password");
         document.getElementById('name').innerHTML = nameID;
         document.getElementById('email').innerHTML = emailID;
         document.getElementById('password').innerHTML = passwordID;
     }
     
-   var fname = document.getElementById('name')
-   var Email = document.getElementById('email')
-   var Password =  document.getElementById('password') 
+//    var fname = document.getElementById('name')
+//    var Email = document.getElementById('email')
+//    var Password =  document.getElementById('password') 
 
-   fname.addEventListener('click',()=>{
-       document.createElement('input');
-   })
+//    fname.addEventListener('click',()=>{
+//        document.createElement('input');
+//    })
